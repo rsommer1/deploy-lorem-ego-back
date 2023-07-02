@@ -24,7 +24,7 @@
   },
   "scripts": {
     "dev": "nodemon src/index.js",
-    "start": "node src/indexjs",
+    "start": "node src/index.js",
     "deploy": "node start.js",
     "db:migrate": "sequelize db:migrate",
     "db:seed": "sequelize db:seed:all",
