@@ -575,7 +575,7 @@ async function joinGame(ctx) {
           ctx.status = 200;
           return;
         }
-        await ctx.orm.Player.create({gameid: gameid, color: "blue", userid: userid});
+        await ctx.orm.Player.create({gameid: gameid, color: "red", userid: userid});
         game.stage = "ongoing";
         await game.save();
         ctx.body = {"result": true, "msg": "Te has unido a la partida"};
